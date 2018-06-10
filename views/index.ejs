@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{title}}</title>
+		<link rel="stylesheet" href="/stylesheets/style.css" />
+	</head>
+	<body>
+		<h1>Send Email</h1>
+		<form action="/api/send" method="post">
+			<input type="text" name="recipient" placeholder="Recipient"><br/>
+			<input type="text" name="subject" placeholder="subect"><br/>
+			<textarea name="content" placeholder="Content"></textarea><br/>
+			<button type="submit">Send</button>
+		</form>
+	</body>
+</html>
