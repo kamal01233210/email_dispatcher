@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>{{title}}</title>
+		<title>Email Dispatch</title>
 		<link rel="stylesheet" href="/stylesheets/style.css" />
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 	</head>
-	<body>
-		<h1>Send Email</h1>
-		<form action="/api/send" method="post">
-			<input type="text" name="recipient" placeholder="Recipient"><br/>
-			<input type="text" name="subject" placeholder="subect"><br/>
-			<textarea name="content" placeholder="Content"></textarea><br/>
-			<button type="submit">Send</button>
-		</form>
+	<body class="container" style="background: #f9f9f9">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<h1>Send Email</h1>
+				<hr/>
+			
+				<form action="/api/send" method="post">
+				<input type="text" name="recipient" placeholder="Recipient" class="form-control"><br/>
+				<input type="text" name="subject" placeholder="subect" class="form-control"><br/>
+				<textarea name="content" placeholder="Content" class="form-control"></textarea><br/>
+				<button type="submit" class="btn btn-info">Send</button>
+		</form>		
+			</div>
+		</div>
+		
+		
 	</body>
 </html>
